@@ -1,0 +1,4 @@
+Este e um texto escrito diretamente no arquivo
+Podemos coloca quantas linhas quisemos
+Ultima linha de teste
+Trabalha duro
