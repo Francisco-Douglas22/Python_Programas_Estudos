@@ -1,29 +1,17 @@
+# Solicita ao usuário que insira duas strings
+string1 = input("Digite a primeira string: ")
+string2 = input("Digite a segunda string: ")
 
-# Solicita ao usuário que insira um valor em metros
-metros = float(input('Digite o valor em Metros: M '))
+# Converte ambas as strings para letras minúsculas e divide em palavras
+palavras_string1 = string1.lower().split()
+palavras_string2 = string2.lower().split()
 
-# Converte metros para quilômetros
-km = metros / 1000
+# Ordena as palavras em ordem alfabética e alfabética inversa, ignorando maiúsculas e minúsculas
+palavras_string1_ordenadas = sorted(palavras_string1)
+palavras_string2_ordenadas = sorted(palavras_string2, reverse=True)
 
-# Converte metros para hectômetros
-hec = metros / 100
+# Imprime a primeira string com palavras em ordem alfabética
+print("Primeira string em ordem alfabética:", ' '.join(palavras_string1_ordenadas))
 
-# Converte metros para decâmetros
-deca = metros / 10
-
-# Converte metros para decímetros
-deci = metros * 10
-
-# Converte metros para centímetros
-cent = metros * 100
-
-# Converte metros para milímetros
-mili = metros * 1000
-
-print(f'O Comprimento de {metros} Metros e equivalente a ')
-print(f'''
-{km} Km Quilometros
-{deca} Decametros
-{deci} Decimetros
-{cent} Centimetros
-{mili} Milimetros''')
+# Imprime a segunda string com palavras em ordem alfabética inversa
+print("Segunda string em ordem alfabética inversa:", ' '.join(palavras_string2_ordenadas))
